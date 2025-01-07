@@ -5,7 +5,7 @@ Build-Depends: cmake (>= 2.8.7),
                debhelper-compat (= 13),
                libboost-dev (>= 1.34.0~),
                pkg-kde-tools (>= 0.12),
-               qtbase5-dev (>= 5.11.0~)
+               qtbase6-dev (>= 6.0.0~)
 Standards-Version: 4.5.0
 Section: libs
 Homepage: https://www.kdab.com/development-resources/qt-tools/kd-soap/
@@ -31,9 +31,9 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: qt6-base-dev (>= 6.0.0~),
-         libkdsoap1 (= ${binary:Version}),
+         libkdsoap2 (= ${binary:Version}),
          libkdsoap-bin (= ${binary:Version}),
-         libkdsoap-server1 (= ${binary:Version}),
+         libkdsoap-server2 (= ${binary:Version}),
          ${misc:Depends}
 Suggests: libkdsoap-doc
 Description: Qt-based client-side and server-side SOAP component - devel files
