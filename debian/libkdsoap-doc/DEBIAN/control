@@ -1,0 +1,17 @@
+Package: libkdsoap-doc
+Source: kdsoap
+Version: 2.2.0+dfsg-1
+Architecture: all
+Maintainer: Thomas Pierson <contact@thomaspierson.fr>
+Installed-Size: 74
+Suggests: libkdsoap-dev
+Section: doc
+Priority: optional
+Homepage: https://www.kdab.com/development-resources/qt-tools/kd-soap/
+Description: Qt-based client-side and server-side SOAP component - documentation
+ Qt-based client-side and server-side SOAP component. It can be used to
+ create client applications for web services and also provides the means to
+ create web services without the need for any further component such as a
+ dedicated web server.
+ .
+ This package contains the documentation.

@@ -1,0 +1,83 @@
+.TH KDWSDL2CPP "1" "October 2020" "KDAB's WSDL to C++ compiler 2.1" "User Commands"
+.SH NAME
+kdwsdl2cpp \- KDAB's WSDL to C++ compiler
+.SH USAGE
+Header file: \fB\,kdwsdl2cpp\/\fR [options] \fB\-o\fR <headerfile> <wsdlfile>
+.TP
+Impl.  file: \fB\,kdwsdl2cpp\/\fR [options] \fB\-o\fR <cppfile> \fB\-impl\fR <headerfile> <wsdlfile>
+.TP
+Both files : \fB\,kdwsdl2cpp\/\fR [options] \fB\-both\fR <basefile> <wsdlfile>
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-help\fR
+display this help and exit
+.TP
+\fB\-v\fR, \fB\-version\fR
+display version
+.TP
+\fB\-s\fR, \fB\-service\fR
+name of the service to generate
+.TP
+\fB\-o\fR <file>
+output the generated file into <file>
+.TP
+\fB\-impl\fR <headerfile>
+generate the implementation(.cpp) file, and #include <headerfile>
+.TP
+\fB\-both\fR <basefilename>
+generate both the header(.h) and the implementation(.cpp) file
+.TP
+\fB\-server\fR
+generate server\-side base class, instead of client service
+.TP
+\fB\-exportMacro\fR <macroname>
+set the export declaration to use for generated classes
+.TP
+\fB\-namespace\fR <ns>
+put all generated classes into the given C++ namespace
+.TP
+\fB\-namespaceMapping\fR <mapping>
+add the uri=code mapping
+if <mapping> begins with '@', read from file instead
+one entry per line
+(affects the generated class names)
+.TP
+\fB\-optional\-element\-type\fR <type>
+use <type> as the getter return value for optional elements.
+<type> can be either raw\-pointer, boost\-optional or std\-optional
+.TP
+\fB\-keep\-unused\-types\fR
+keep the wsdl unused types to the cpp generation step
+.TP
+\fB\-import\-path\fR <importpath> search for files first in this path before
+downloading them. may be specified multiple times.
+the file needs to be located at:
+<importpath>/<url\-host>/<url\-path>
+.TP
+\fB\-use\-local\-files\-only\fR
+only use local files instead of downloading them
+automatically. this can be used to force the correct
+use of the import\-path option
+.TP
+\fB\-help\-on\-missing\fR
+When groups or basic types could not be found, display
+available types (helps with wrong namespaces)
+.TP
+\fB\-pkcs12file\fR
+Load a certificate from a PKCS12 file. You can use this option
+if the WSDL file (or files refering to it) is served from a
+location which require certificate based authentication
+.TP
+\fB\-pkcs12password\fR
+Pass the password for the certificate file if required.
+This option is not secure and should be used with caution
+if other users of the machine are capable to see the running                             processes ran by the current user.
+.SH "AUTHORS" 
+.PP 
+kdwsdl2cpp was written by Tobias Koenig <tokoe@kde.org>.
+.PP 
+This manual page was written by Thomas Pierson <contact@thomaspierson.fr> for the
+\fBDebian\fP system (and may be used by others).  Permission is granted to
+copy, distribute and/or modify this document under the terms of the GNU General
+Public License, Version 3 any later version published by the Free Software
+Foundation.

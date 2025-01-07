@@ -1,0 +1,17 @@
+This package uses git-buildpackage and pristine-tar as the packaging VCS.
+
+Please install Debian git-buildpackage package 0.5.10 or higher and read /usr/share/doc/git-buildpackage/manual-html for more information how to checkout, add, remove, modify patches and do other
+common tasks. 
+
+Branch structure of the repository:
+
+* upstream   - upstream source code.
+* pristine-tar - contain original and repacked upstream tarballs.
+* master     - the Debianization branch (upstream source and debian directory).
+
+The repacking procedure is done using uscan and the File-Excluded field present
+in the copyright file. Read this page for more information:
+
+* https://wiki.debian.org/UscanEnhancements#Unifying_the_process_to_strip_files_with_problematic_copyright_from_upstream_tarballs
+
+ -- Thomas Pierson <contact@thomaspierson.fr>  Wed, 21 Oct 2020 10:16:16 +0200

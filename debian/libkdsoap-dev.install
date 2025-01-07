@@ -1,0 +1,11 @@
+usr/include/KDSoapClient/*
+usr/include/KDSoapServer/*
+usr/lib/*/libkdsoap.so
+usr/lib/*/libkdsoap-server.so
+usr/lib/*/cmake/KDSoap/KDSoapConfig.cmake
+usr/lib/*/cmake/KDSoap/KDSoapConfigVersion.cmake
+usr/lib/*/cmake/KDSoap/KDSoapMacros.cmake
+usr/lib/*/cmake/KDSoap/KDSoapTargets.cmake
+usr/lib/*/cmake/KDSoap/KDSoapTargets-debug.cmake
+usr/share/mkspecs/features/kdsoap.prf usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/
+usr/lib/*/qt5/mkspecs/modules/*

@@ -1,0 +1,12 @@
+Package: libkdsoap-bin-dbgsym
+Source: kdsoap
+Version: 2.2.0+dfsg-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Thomas Pierson <contact@thomaspierson.fr>
+Installed-Size: 6639
+Depends: libkdsoap-bin (= 2.2.0+dfsg-1)
+Section: debug
+Priority: optional
+Description: debug symbols for libkdsoap-bin
+Build-Ids: 7fb6ad65da174f3a215dcbe3bd0d8b98b0642913

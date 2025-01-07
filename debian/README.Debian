@@ -1,0 +1,13 @@
+# KDSoap for Debian
+
+## Debian DFSG repacked version of the original upstream sources
+
+The current original upstream version of KDSoap contains some files who can not
+be included in this Debian package:
+
+* The folder `unittests/` have been excluded because it contains
+ several non-free files or files depending on them.
+
+* The PDF manual file have been excluded because its sources are missing.
+
+ -- Thomas Pierson <contact@thomaspierson.fr>  Sun, 01 Nov 2020 13:02:39 +0100

@@ -1,0 +1,8 @@
+version=4
+opts=\
+repacksuffix=+dfsg,\
+repack,compression=xz,\
+dversionmangle=s/\+dfsg\d*$//,\
+filenamemangle=s/.*\/kdsoap\-?(\d\S+)\.tar\.gz/kdsoap-$1\.tar\.gz/ \
+  https://github.com/KDAB/KDSoap/tags .*/archive/refs/tags/kdsoap\-?(\d\S+)\.tar\.gz
+
