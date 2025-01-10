@@ -1,11 +1,10 @@
-usr/include/KDSoapClient/*
-usr/include/KDSoapServer/*
-usr/lib/*/libkdsoap.so
-usr/lib/*/libkdsoap-server.so
-usr/lib/*/cmake/KDSoap/KDSoapConfig.cmake
-usr/lib/*/cmake/KDSoap/KDSoapConfigVersion.cmake
-usr/lib/*/cmake/KDSoap/KDSoapMacros.cmake
-usr/lib/*/cmake/KDSoap/KDSoapTargets.cmake
-usr/lib/*/cmake/KDSoap/KDSoapTargets-debug.cmake
-usr/share/mkspecs/features/kdsoap.prf usr/lib/${DEB_HOST_MULTIARCH}/qt5/mkspecs/features/
-usr/lib/*/qt5/mkspecs/modules/*
+usr/include/KDSoapClient-Qt6/*
+usr/include/KDSoapServer-Qt6/*
+usr/lib/*/libkdsoap-qt6.so
+usr/lib/*/libkdsoap-server-qt6.so
+usr/lib/*/cmake/KDSoap-qt6/KDSoap-qt6Config.cmake
+usr/lib/*/cmake/KDSoap-qt6/KDSoap-qt6ConfigVersion.cmake
+usr/lib/*/cmake/KDSoap-qt6/KDSoapMacros.cmake
+usr/lib/*/cmake/KDSoap-qt6/KDSoapTargets.cmake
+usr/lib/*/cmake/KDSoap-qt6/KDSoapTargets-debug.cmake
+usr/lib/*/qt6/mkspecs/modules/*
